@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b4b1c6b-19b7-4c68-a92e-98e278efa5a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_4MedianOfTwoSortedArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_5LongestPalindromicSubstring.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -45,7 +45,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Application._4MedianOfTwoSortedArrays">
+  <component name="RunManager" selected="Application._5LongestPalindromicSubstring">
     <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.TwoSum" />
       <module name="leetcode" />
@@ -98,6 +98,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_5LongestPalindromicSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._5LongestPalindromicSubstring" />
+      <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="leetcode.editor.cn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="leetcode" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="leetcode.editor.cn.demo.DemoApplication" />
@@ -107,6 +120,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._5LongestPalindromicSubstring" />
         <item itemvalue="Application._4MedianOfTwoSortedArrays" />
         <item itemvalue="Application._3LongestSubstringWithoutRepeatingCharacters" />
         <item itemvalue="Application._1TwoSum" />
@@ -124,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620264757753</updated>
-      <workItem from="1620264785347" duration="14727000" />
+      <workItem from="1620264785347" duration="19855000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1620266658707</created>
@@ -161,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620283895137</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="init">
+      <created>1620284982950</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620284982950</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,10 +194,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2" timestamp="1620283895067">
+    <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2" timestamp="1620284982906">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2/0.27.1920.985@0.27.1920.985" timestamp="1620283895067" />
+    <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2/0.27.1920.985@0.27.1920.985" timestamp="1620284982906" />
     <state x="762" y="301" width="453" height="491" key="FileChooserDialogImpl" timestamp="1620266306822">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -185,50 +206,54 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="817" y="414" width="286" height="217" key="Github.ShareDialog/0.27.1920.985@0.27.1920.985" timestamp="1620269306982" />
-    <state width="933" height="230" key="GridCell.Tab.0.bottom" timestamp="1620284938493">
+    <state width="933" height="251" key="GridCell.Tab.0.bottom" timestamp="1620291391696">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="933" height="230" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620284938493" />
-    <state width="933" height="230" key="GridCell.Tab.0.center" timestamp="1620284938493">
+    <state width="933" height="251" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620291391696" />
+    <state width="933" height="251" key="GridCell.Tab.0.center" timestamp="1620291391696">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="933" height="230" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1620284938493" />
-    <state width="933" height="230" key="GridCell.Tab.0.left" timestamp="1620284938492">
+    <state width="933" height="251" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1620291391696" />
+    <state width="933" height="251" key="GridCell.Tab.0.left" timestamp="1620291391695">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="933" height="230" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1620284938492" />
-    <state width="933" height="230" key="GridCell.Tab.0.right" timestamp="1620284938493">
+    <state width="933" height="251" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1620291391695" />
+    <state width="933" height="251" key="GridCell.Tab.0.right" timestamp="1620291391696">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="933" height="230" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1620284938493" />
-    <state width="1008" height="308" key="GridCell.Tab.1.bottom" timestamp="1620284780687">
+    <state width="933" height="251" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1620291391696" />
+    <state width="1003" height="275" key="GridCell.Tab.1.bottom" timestamp="1620291286266">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1008" height="308" key="GridCell.Tab.1.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620284780687" />
-    <state width="1008" height="308" key="GridCell.Tab.1.center" timestamp="1620284780686">
+    <state width="1003" height="275" key="GridCell.Tab.1.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620291286266" />
+    <state width="1003" height="275" key="GridCell.Tab.1.center" timestamp="1620291286266">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1008" height="308" key="GridCell.Tab.1.center/0.27.1920.985@0.27.1920.985" timestamp="1620284780686" />
-    <state width="1008" height="308" key="GridCell.Tab.1.left" timestamp="1620284780686">
+    <state width="1003" height="275" key="GridCell.Tab.1.center/0.27.1920.985@0.27.1920.985" timestamp="1620291286266" />
+    <state width="1003" height="275" key="GridCell.Tab.1.left" timestamp="1620291286266">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1008" height="308" key="GridCell.Tab.1.left/0.27.1920.985@0.27.1920.985" timestamp="1620284780686" />
-    <state width="1008" height="308" key="GridCell.Tab.1.right" timestamp="1620284780687">
+    <state width="1003" height="275" key="GridCell.Tab.1.left/0.27.1920.985@0.27.1920.985" timestamp="1620291286266" />
+    <state width="1003" height="275" key="GridCell.Tab.1.right" timestamp="1620291286266">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1008" height="308" key="GridCell.Tab.1.right/0.27.1920.985@0.27.1920.985" timestamp="1620284780687" />
+    <state width="1003" height="275" key="GridCell.Tab.1.right/0.27.1920.985@0.27.1920.985" timestamp="1620291286266" />
     <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1620269587937">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.985@0.27.1920.985" timestamp="1620269587937" />
+    <state x="747" y="147" width="416" height="752" key="RollbackChangesDialog" timestamp="1620287019159">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="747" y="147" width="416" height="752" key="RollbackChangesDialog/0.27.1920.985@0.27.1920.985" timestamp="1620287019159" />
     <state x="53" y="122" width="1801" height="793" key="SettingsEditor" timestamp="1620269161770">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="53" y="122" width="1801" height="793" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1620269161770" />
-    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1620279163143">
+    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1620284991940">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1620279163143" />
+    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1620284991940" />
     <state x="764" y="431" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620269347518">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
@@ -241,5 +266,16 @@
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="793" y="313" width="324" height="419" key="svn.repositoryBrowser/0.27.1920.985@0.27.1920.985" timestamp="1620266196608" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_5LongestPalindromicSubstring.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
