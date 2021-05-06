@@ -44,13 +44,15 @@ package leetcode.editor.cn;
 // 👍 10993 👎 0
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class _1TwoSum {
     public static void main(String[] args) {
         Solution solution = new _1TwoSum().new Solution();
-        System.out.println(Arrays.toString(solution.twoSum(new int[]{2, 7, 11, 15}, 9)));
-        System.out.println(Arrays.toString(solution.twoSum(new int[]{3, 2, 4}, 6)));
-        System.out.println(Arrays.toString(solution.twoSum(new int[]{3, 3}, 6)));
+//        System.out.println(Arrays.toString(solution.twoSum(new int[]{2, 7, 11, 15}, 9)));
+        System.out.println(Arrays.toString(solution.twoSum(new int[]{3, 2, 5, 5, 4}, 6)));
+//        System.out.println(Arrays.toString(solution.twoSum(new int[]{3, 3}, 6)));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -59,17 +61,23 @@ public class _1TwoSum {
             if (nums == null || nums.length < 2) {
                 return null;
             }
-            int result[] = new int[2];
-            for (int i = 0; i < nums.length; i++) {
-                for (int j = i + 1; j < nums.length; j++) {
-                    if (nums[i] + nums[j] == target) {
-                        result[0] = i;
-                        result[1] = j;
-                        return result;
-                    }
+            //暴力遍历
+//            for (int i = 0; i < nums.length; i++) {
+//                for (int j = i + 1; j < nums.length; j++) {
+//                    if (nums[i] + nums[j] == target) {
+//                        return new int[]{i, j};
+//                    }
+//                }
+//            }
+            //hashmap
+            Map<Integer, Integer> hashMap = new HashMap<>();
+            for (int i = 0; i < nums.length; ++i) {
+                if (hashMap.containsKey(target - nums[i])) {
+                    return new int[]{hashMap.get(target - nums[i]), i};
                 }
+                hashMap.put(nums[i], i);
             }
-            return result;
+            return new int[0];
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

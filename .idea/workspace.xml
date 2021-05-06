@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b4b1c6b-19b7-4c68-a92e-98e278efa5a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/liang-shu-zhi-he-by-leetcode-solution.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_1TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_1TwoSum.java" afterDir="false" />
@@ -44,7 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="leetcode.id" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Application._1TwoSum">
     <configuration name="TwoSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -97,7 +98,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620264757753</updated>
-      <workItem from="1620264785347" duration="2882000" />
+      <workItem from="1620264785347" duration="4534000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1620266658707</created>
@@ -106,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620266658707</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1620267704574</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620267704574</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,42 +126,66 @@
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2" timestamp="1620266658600">
+    <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2" timestamp="1620267813968">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2/0.27.1920.985@0.27.1920.985" timestamp="1620266658600" />
+    <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2/0.27.1920.985@0.27.1920.985" timestamp="1620267813968" />
     <state x="762" y="301" width="453" height="491" key="FileChooserDialogImpl" timestamp="1620266306822">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="762" y="301" width="453" height="491" key="FileChooserDialogImpl/0.27.1920.985@0.27.1920.985" timestamp="1620266306822" />
-    <state width="1866" height="249" key="GridCell.Tab.0.bottom" timestamp="1620267666783">
+    <state x="817" y="414" width="286" height="217" key="Github.ShareDialog" timestamp="1620269306982">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1866" height="249" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620267666783" />
-    <state width="1866" height="249" key="GridCell.Tab.0.center" timestamp="1620267666783">
+    <state x="817" y="414" width="286" height="217" key="Github.ShareDialog/0.27.1920.985@0.27.1920.985" timestamp="1620269306982" />
+    <state width="933" height="131" key="GridCell.Tab.0.bottom" timestamp="1620269024090">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1866" height="249" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1620267666783" />
-    <state width="1866" height="249" key="GridCell.Tab.0.left" timestamp="1620267666782">
+    <state width="933" height="131" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620269024090" />
+    <state width="933" height="131" key="GridCell.Tab.0.center" timestamp="1620269024089">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1866" height="249" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1620267666782" />
-    <state width="1866" height="249" key="GridCell.Tab.0.right" timestamp="1620267666783">
+    <state width="933" height="131" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1620269024089" />
+    <state width="933" height="131" key="GridCell.Tab.0.left" timestamp="1620269024089">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1866" height="249" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1620267666783" />
-    <state x="53" y="122" width="1801" height="793" key="SettingsEditor" timestamp="1620266942635">
+    <state width="933" height="131" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1620269024089" />
+    <state width="933" height="131" key="GridCell.Tab.0.right" timestamp="1620269024090">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="53" y="122" width="1801" height="793" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1620266942635" />
-    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1620266660629">
+    <state width="933" height="131" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1620269024090" />
+    <state width="933" height="308" key="GridCell.Tab.1.bottom" timestamp="1620268658330">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1620266660629" />
-    <state x="764" y="431" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620266556407">
+    <state width="933" height="308" key="GridCell.Tab.1.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620268658330" />
+    <state width="933" height="308" key="GridCell.Tab.1.center" timestamp="1620268658330">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="764" y="431" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog/0.27.1920.985@0.27.1920.985" timestamp="1620266556407" />
+    <state width="933" height="308" key="GridCell.Tab.1.center/0.27.1920.985@0.27.1920.985" timestamp="1620268658330" />
+    <state width="933" height="308" key="GridCell.Tab.1.left" timestamp="1620268658330">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="933" height="308" key="GridCell.Tab.1.left/0.27.1920.985@0.27.1920.985" timestamp="1620268658330" />
+    <state width="933" height="308" key="GridCell.Tab.1.right" timestamp="1620268658330">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="933" height="308" key="GridCell.Tab.1.right/0.27.1920.985@0.27.1920.985" timestamp="1620268658330" />
+    <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1620267836318">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.985@0.27.1920.985" timestamp="1620267836318" />
+    <state x="53" y="122" width="1801" height="793" key="SettingsEditor" timestamp="1620269161770">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="53" y="122" width="1801" height="793" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1620269161770" />
+    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1620267706296">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1620267706296" />
+    <state x="764" y="431" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620269186048">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="764" y="431" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog/0.27.1920.985@0.27.1920.985" timestamp="1620269186048" />
     <state x="793" y="313" width="324" height="419" key="svn.repositoryBrowser" timestamp="1620266196608">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
