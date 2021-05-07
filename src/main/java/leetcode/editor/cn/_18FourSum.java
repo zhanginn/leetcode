@@ -63,7 +63,9 @@ public class _18FourSum {
                                 subList.add(nums[j]);
                                 subList.add(nums[k]);
                                 subList.add(nums[l]);
-                                result.add(subList);
+                                if (!result.contains(subList)) {
+                                    result.add(subList);
+                                }
                             }
                         }
                     }
