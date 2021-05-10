@@ -1,17 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b4b1c6b-19b7-4c68-a92e-98e278efa5a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_20ValidParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_22GenerateParentheses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_28ImplementStrstr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_29DivideTwoIntegers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/gua-hao-sheng-cheng-by-leetcode-solution.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__O_dfrac{4^n}{sqrt{n}}__.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__dfrac{1}{n+1}dbinom{2n}{n}_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__dfrac{4^n}{nsqrt{n}}_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/po-su-de-xiang-fa-mei-you-wei-yun-suan-mei-you-yi-.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/you-xiao-de-gua-hao-by-leetcode-solution.md" afterDir="false" />
+    <list default="true" id="9b4b1c6b-19b7-4c68-a92e-98e278efa5a0" name="Default Changelist" comment="init">
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_31NextPermutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_35SearchInsertPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_35SearchInsertPosition.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_38CountAndSay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_53MaximumSubarray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_58LengthOfLastWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/chuan-lian-suo-you-dan-ci-de-zi-chuan-by-powcai.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/he-bing-liang-ge-you-xu-lian-biao-by-leetcode-solu.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/jian-dan-ti-jian-dan-zuo-by-ya-ya-ko.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__O_log_n__.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__O_sum_{i=1}^{log_n}_2^{i-1}_=O_n__.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p___f_i__=_max_{_f_i-1__+_textit{nums}_i_,_textit{nums}_i__}__.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p___left{_begin{array}{ll}_______list1_0__+_merge_list1_1:_,_list2__&amp;_list1_0____list2_0_________list2_0__+_merge_list1,_list2_1:___&amp;_otherwise_end{array}_right.__.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p___textit{nums}_pos-1__textit{target}le_textit{nums}_pos___.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__f_i-1__+_textit{nums}_i__.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__m_=_lfloor_frac{l_+_r}{2}_rfloor_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__max_{0_leq_i_leq_n-1}_{_f_i__}_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__textit{ans}_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__textit{iSum}_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__textit{lSum}_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__textit{mSum}_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__textit{nums}_i__.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__textit{pos}_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__textit{pre}_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/p__textit{rSum}_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/sou-suo-cha-ru-wei-zhi-by-leetcode-solution.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/doc/zui-da-zi-xu-he-by-leetcode-solution.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/all.json" afterDir="false" />
@@ -53,11 +70,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
-  <component name="RunManager" selected="Application._20ValidParentheses">
-    <configuration name="_18FourSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._18FourSum" />
+  <component name="RunManager" selected="Application._58LengthOfLastWord">
+    <configuration name="_31NextPermutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._31NextPermutation" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -69,8 +86,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_20ValidParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._20ValidParentheses" />
+    <configuration name="_35SearchInsertPosition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._35SearchInsertPosition" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -82,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_22GenerateParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._22GenerateParentheses" />
+    <configuration name="_38CountAndSay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._38CountAndSay" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -95,8 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_28ImplementStrstr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._28ImplementStrstr" />
+    <configuration name="_53MaximumSubarray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._53MaximumSubarray" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -108,8 +125,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_29DivideTwoIntegers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._29DivideTwoIntegers" />
+    <configuration name="_58LengthOfLastWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn._58LengthOfLastWord" />
       <module name="leetcode" />
       <extension name="coverage">
         <pattern>
@@ -130,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._20ValidParentheses" />
-        <item itemvalue="Application._29DivideTwoIntegers" />
-        <item itemvalue="Application._28ImplementStrstr" />
-        <item itemvalue="Application._22GenerateParentheses" />
-        <item itemvalue="Application._18FourSum" />
+        <item itemvalue="Application._58LengthOfLastWord" />
+        <item itemvalue="Application._53MaximumSubarray" />
+        <item itemvalue="Application._38CountAndSay" />
+        <item itemvalue="Application._35SearchInsertPosition" />
+        <item itemvalue="Application._31NextPermutation" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +167,8 @@
       <updated>1620264757753</updated>
       <workItem from="1620264785347" duration="22779000" />
       <workItem from="1620371656110" duration="16580000" />
-      <workItem from="1620430703867" duration="5573000" />
+      <workItem from="1620430703867" duration="6148000" />
+      <workItem from="1620607898053" duration="20620000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1620266658707</created>
@@ -229,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620379895711</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="init">
+      <created>1620438613310</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1620438613310</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,82 +270,88 @@
       <screen x="0" y="27" width="1920" height="984" />
     </state>
     <state x="693" y="265" width="524" height="514" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.27.1920.984@0.27.1920.984" timestamp="1620376155781" />
-    <state x="521" y="27" width="916" height="984" key="CommitChangelistDialog2" timestamp="1620379895662">
+    <state x="521" y="27" width="916" height="984" key="CommitChangelistDialog2" timestamp="1620632073551">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state x="521" y="27" width="916" height="984" key="CommitChangelistDialog2/0.27.1920.984@0.27.1920.984" timestamp="1620379895662" />
+    <state x="521" y="27" width="916" height="984" key="CommitChangelistDialog2/0.27.1920.984@0.27.1920.984" timestamp="1620632073551" />
     <state x="521" y="27" width="867" height="985" key="CommitChangelistDialog2/0.27.1920.985@0.27.1920.985" timestamp="1620293949341" />
-    <state width="498" height="580" key="DebuggerActiveHint" timestamp="1620382808795">
+    <state width="498" height="580" key="DebuggerActiveHint" timestamp="1620615122119">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="498" height="580" key="DebuggerActiveHint/0.27.1920.984@0.27.1920.984" timestamp="1620382808795" />
+    <state width="498" height="580" key="DebuggerActiveHint/0.27.1920.984@0.27.1920.984" timestamp="1620615122119" />
     <state width="498" height="580" key="DebuggerActiveHint/0.27.1920.985@0.27.1920.985" timestamp="1620292819948" />
-    <state x="762" y="301" width="453" height="491" key="FileChooserDialogImpl" timestamp="1620266306822">
-      <screen x="0" y="27" width="1920" height="985" />
+    <state x="762" y="301" width="453" height="491" key="FileChooserDialogImpl" timestamp="1620614672284">
+      <screen x="0" y="27" width="1920" height="984" />
     </state>
+    <state x="762" y="301" key="FileChooserDialogImpl/0.27.1920.984@0.27.1920.984" timestamp="1620614672284" />
     <state x="762" y="301" width="453" height="491" key="FileChooserDialogImpl/0.27.1920.985@0.27.1920.985" timestamp="1620266306822" />
     <state x="817" y="414" width="286" height="217" key="Github.ShareDialog" timestamp="1620269306982">
       <screen x="0" y="27" width="1920" height="985" />
     </state>
     <state x="817" y="414" width="286" height="217" key="Github.ShareDialog/0.27.1920.985@0.27.1920.985" timestamp="1620269306982" />
-    <state width="977" height="224" key="GridCell.Tab.0.bottom" timestamp="1620438535912">
+    <state width="956" height="318" key="GridCell.Tab.0.bottom" timestamp="1620636825728">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="977" height="224" key="GridCell.Tab.0.bottom/0.27.1920.984@0.27.1920.984" timestamp="1620438535912" />
+    <state width="956" height="318" key="GridCell.Tab.0.bottom/0.27.1920.984@0.27.1920.984" timestamp="1620636825728" />
     <state width="1001" height="273" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620293339121" />
-    <state width="977" height="224" key="GridCell.Tab.0.center" timestamp="1620438535911">
+    <state width="956" height="318" key="GridCell.Tab.0.center" timestamp="1620636825728">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="977" height="224" key="GridCell.Tab.0.center/0.27.1920.984@0.27.1920.984" timestamp="1620438535911" />
+    <state width="956" height="318" key="GridCell.Tab.0.center/0.27.1920.984@0.27.1920.984" timestamp="1620636825728" />
     <state width="1001" height="273" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1620293339121" />
-    <state width="977" height="224" key="GridCell.Tab.0.left" timestamp="1620438535911">
+    <state width="956" height="318" key="GridCell.Tab.0.left" timestamp="1620636825728">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="977" height="224" key="GridCell.Tab.0.left/0.27.1920.984@0.27.1920.984" timestamp="1620438535911" />
+    <state width="956" height="318" key="GridCell.Tab.0.left/0.27.1920.984@0.27.1920.984" timestamp="1620636825728" />
     <state width="1001" height="273" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1620293339121" />
-    <state width="977" height="224" key="GridCell.Tab.0.right" timestamp="1620438535911">
+    <state width="956" height="318" key="GridCell.Tab.0.right" timestamp="1620636825728">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="977" height="224" key="GridCell.Tab.0.right/0.27.1920.984@0.27.1920.984" timestamp="1620438535911" />
+    <state width="956" height="318" key="GridCell.Tab.0.right/0.27.1920.984@0.27.1920.984" timestamp="1620636825728" />
     <state width="1001" height="273" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1620293339121" />
-    <state width="977" height="224" key="GridCell.Tab.1.bottom" timestamp="1620438535990">
+    <state width="956" height="318" key="GridCell.Tab.1.bottom" timestamp="1620636825808">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="977" height="224" key="GridCell.Tab.1.bottom/0.27.1920.984@0.27.1920.984" timestamp="1620438535990" />
+    <state width="956" height="318" key="GridCell.Tab.1.bottom/0.27.1920.984@0.27.1920.984" timestamp="1620636825808" />
     <state width="1001" height="273" key="GridCell.Tab.1.bottom/0.27.1920.985@0.27.1920.985" timestamp="1620293339122" />
-    <state width="977" height="224" key="GridCell.Tab.1.center" timestamp="1620438535989">
+    <state width="956" height="318" key="GridCell.Tab.1.center" timestamp="1620636825808">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="977" height="224" key="GridCell.Tab.1.center/0.27.1920.984@0.27.1920.984" timestamp="1620438535989" />
+    <state width="956" height="318" key="GridCell.Tab.1.center/0.27.1920.984@0.27.1920.984" timestamp="1620636825808" />
     <state width="1001" height="273" key="GridCell.Tab.1.center/0.27.1920.985@0.27.1920.985" timestamp="1620293339122" />
-    <state width="977" height="224" key="GridCell.Tab.1.left" timestamp="1620438535989">
+    <state width="956" height="318" key="GridCell.Tab.1.left" timestamp="1620636825808">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="977" height="224" key="GridCell.Tab.1.left/0.27.1920.984@0.27.1920.984" timestamp="1620438535989" />
+    <state width="956" height="318" key="GridCell.Tab.1.left/0.27.1920.984@0.27.1920.984" timestamp="1620636825808" />
     <state width="1001" height="273" key="GridCell.Tab.1.left/0.27.1920.985@0.27.1920.985" timestamp="1620293339122" />
-    <state width="977" height="224" key="GridCell.Tab.1.right" timestamp="1620438535990">
+    <state width="956" height="318" key="GridCell.Tab.1.right" timestamp="1620636825808">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state width="977" height="224" key="GridCell.Tab.1.right/0.27.1920.984@0.27.1920.984" timestamp="1620438535990" />
+    <state width="956" height="318" key="GridCell.Tab.1.right/0.27.1920.984@0.27.1920.984" timestamp="1620636825808" />
     <state width="1001" height="273" key="GridCell.Tab.1.right/0.27.1920.985@0.27.1920.985" timestamp="1620293339122" />
-    <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1620384748938">
+    <state x="543" y="264" width="824" height="516" key="IDE.errors.dialog" timestamp="1620632063286">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.984@0.27.1920.984" timestamp="1620384748938" />
+    <state x="543" y="264" width="824" height="516" key="IDE.errors.dialog/0.27.1920.984@0.27.1920.984" timestamp="1620632063286" />
+    <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog" timestamp="1620615483726">
+      <screen x="0" y="27" width="1920" height="984" />
+    </state>
+    <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.984@0.27.1920.984" timestamp="1620615483726" />
     <state x="493" y="177" width="924" height="691" key="Maven.ArtifactSearchDialog/0.27.1920.985@0.27.1920.985" timestamp="1620269587937" />
     <state x="747" y="145" width="416" height="752" key="RollbackChangesDialog" timestamp="1620431097346">
       <screen x="0" y="27" width="1920" height="968" />
     </state>
     <state x="747" y="145" key="RollbackChangesDialog/0.27.1920.968@0.27.1920.968" timestamp="1620431097346" />
     <state x="747" y="147" width="416" height="752" key="RollbackChangesDialog/0.27.1920.985@0.27.1920.985" timestamp="1620287019159" />
-    <state x="53" y="122" width="1801" height="793" key="SettingsEditor" timestamp="1620269161770">
-      <screen x="0" y="27" width="1920" height="985" />
-    </state>
-    <state x="53" y="122" width="1801" height="793" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1620269161770" />
-    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1620379344139">
+    <state x="53" y="122" width="1801" height="793" key="SettingsEditor" timestamp="1620617111163">
       <screen x="0" y="27" width="1920" height="984" />
     </state>
-    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.984@0.27.1920.984" timestamp="1620379344139" />
+    <state x="53" y="122" key="SettingsEditor/0.27.1920.984@0.27.1920.984" timestamp="1620617111163" />
+    <state x="53" y="122" width="1801" height="793" key="SettingsEditor/0.27.1920.985@0.27.1920.985" timestamp="1620269161770" />
+    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2" timestamp="1620439014684">
+      <screen x="0" y="27" width="1920" height="984" />
+    </state>
+    <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.984@0.27.1920.984" timestamp="1620439014684" />
     <state x="555" y="254" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1920.985@0.27.1920.985" timestamp="1620294368951" />
     <state x="764" y="431" width="381" height="183" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620269347518">
       <screen x="0" y="27" width="1920" height="985" />
@@ -376,6 +407,26 @@
           <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_20ValidParentheses.java</url>
           <line>73</line>
           <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_31NextPermutation.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_35SearchInsertPosition.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_53MaximumSubarray.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_58LengthOfLastWord.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

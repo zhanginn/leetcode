@@ -35,6 +35,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_11ContainerWithMostWater.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_11ContainerWithMostWater.java" />
+              <option name="questionId" value="11" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_12IntegerToRoman.java">
           <value>
             <LeetcodeEditor>
@@ -80,6 +88,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_18FourSum.java" />
               <option name="questionId" value="18" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_19RemoveNthNodeFromEndOfList.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_19RemoveNthNodeFromEndOfList.java" />
+              <option name="questionId" value="19" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -163,6 +179,38 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_30SubstringWithConcatenationOfAllWords.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_30SubstringWithConcatenationOfAllWords.java" />
+              <option name="questionId" value="30" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_31NextPermutation.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_31NextPermutation.java" />
+              <option name="questionId" value="31" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_35SearchInsertPosition.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_35SearchInsertPosition.java" />
+              <option name="questionId" value="35" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_38CountAndSay.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_38CountAndSay.java" />
+              <option name="questionId" value="38" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_3LongestSubstringWithoutRepeatingCharacters.java">
           <value>
             <LeetcodeEditor>
@@ -176,6 +224,22 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_4MedianOfTwoSortedArrays.java" />
               <option name="questionId" value="4" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_53MaximumSubarray.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_53MaximumSubarray.java" />
+              <option name="questionId" value="53" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_58LengthOfLastWord.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/main/java/leetcode/editor/cn/_58LengthOfLastWord.java" />
+              <option name="questionId" value="58" />
             </LeetcodeEditor>
           </value>
         </entry>
