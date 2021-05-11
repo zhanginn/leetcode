@@ -38,14 +38,21 @@ public class _67AddBinary {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String addBinary(String a, String b) {
+            if (a.equals("0") && b.equals("0")) {
+                return "0";
+            }
             int sumDec = Integer.parseInt(bin2Dec(a)) + Integer.parseInt(bin2Dec(b));
             return dec2Bin(String.valueOf(sumDec));
         }
 
         public String bin2Dec(String a) {
             int result = 0;
+            int count = 0;
             for (int i = a.length(); i > 0; i--) {
-                result += Integer.parseInt(a.substring(i - 1, i)) * Math.pow(2, i);
+                int pow = (int) Math.pow(2, count);
+                int tempInt = Integer.parseInt(a.substring(i - 1, i));
+                result += tempInt * pow;
+                count++;
             }
             return String.valueOf(result);
         }
