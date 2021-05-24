@@ -58,6 +58,7 @@ package leetcode.editor.cn;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.Stack;
 
 public class _20ValidParentheses {
     public static void main(String[] args) {
@@ -69,32 +70,36 @@ public class _20ValidParentheses {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public boolean isValid(String s) {
-            if (s.length() % 2 == 1) return false;
-            char a1 = '(', a2 = ')', b1 = '[', b2 = ']', c1 = '{', c2 = '}';
-            Deque<Character> deque = new ArrayDeque<>();
-            for (int i = 0; i < s.length(); i++) {
-                char tempStr = s.charAt(i);
-                if (tempStr == a1) deque.push(s.charAt(i));
-                else if (tempStr == a2) {
-                    if (deque.isEmpty() || deque.peek() != a1) {
-                        return false;
-                    }
-                    deque.pop();
-                } else if (tempStr == b1) deque.push(s.charAt(i));
-                else if (tempStr == b2) {
-                    if (deque.isEmpty() || deque.peek() != b1) {
-                        return false;
-                    }
-                    deque.pop();
-                } else if (tempStr == c1) deque.push(s.charAt(i));
-                else if (tempStr == c2) {
-                    if (deque.isEmpty() || deque.peek() != c1) {
-                        return false;
-                    }
-                    deque.pop();
+            Stack<Character> stack = new Stack<>();
+            char[] str = s.toCharArray();
+            for (int i = 0; i < str.length; i++) {
+                switch (str[i]) {
+                    case '(':
+                    case '[':
+                    case '{':
+                        stack.push(str[i]);
+                        break;
+                    case ')':
+                        if (stack.isEmpty() || stack.peek() != '(') {
+                            return false;
+                        }
+                        stack.pop();
+                        break;
+                    case ']':
+                        if (stack.isEmpty() || stack.peek() != '[') {
+                            return false;
+                        }
+                        stack.pop();
+                        break;
+                    case '}':
+                        if (stack.isEmpty() || stack.peek() != '{') {
+                            return false;
+                        }
+                        stack.pop();
+                        break;
                 }
             }
-            return deque.isEmpty();
+            return stack.isEmpty();
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
