@@ -37,18 +37,42 @@
 
 package leetcode.editor.cn;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class _46Permutations {
     public static void main(String[] args) {
         Solution solution = new _46Permutations().new Solution();
-        System.out.println(solution);
+        System.out.println(solution.permute(new int[]{1, 2, 3}));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<List<Integer>> permute(int[] nums) {
-            return null;
+            List<List<Integer>> ans = new ArrayList<>();
+            process(nums, 0, ans);
+            return ans;
+        }
+
+        public void process(int[] arr, int i, List<List<Integer>> ans) {
+            if (i == arr.length) {
+                List<Integer> cur = new ArrayList<>();
+                for (int num : arr) {
+                    cur.add(num);
+                }
+                ans.add(cur);
+            }
+            for (int j = i; j < arr.length; j++) {
+                swap(arr, i, j);
+                process(arr, i + 1, ans);
+                swap(arr, i, j);
+            }
+        }
+
+        public void swap(int[] nums, int i, int j) {
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

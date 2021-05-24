@@ -40,7 +40,7 @@ import java.util.HashSet;
 public class _82RemoveDuplicatesFromSortedListIi {
     public static void main(String[] args) {
         Solution solution = new _82RemoveDuplicatesFromSortedListIi().new Solution();
-        System.out.println(solution.deleteDuplicates(new ListNode(1,new ListNode(1,new ListNode(2)))));
+        System.out.println(solution.deleteDuplicates(new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(3))))));
     }
 
     public static class ListNode {
@@ -75,6 +75,7 @@ public class _82RemoveDuplicatesFromSortedListIi {
         public ListNode deleteDuplicates(ListNode head) {
             ListNode cur = head;
             ListNode last = head;
+            ListNode ll = null;
             HashSet<Integer> hashSet = new HashSet<>();
             while (cur != null) {
                 if (hashSet.contains(cur.val)) {
@@ -82,11 +83,14 @@ public class _82RemoveDuplicatesFromSortedListIi {
                         head = cur.next;
                         last = head;
                     } else {
-                        last.next = cur.next;
+                        ll.next = cur.next;
                     }
                 } else {
                     hashSet.add(cur.val);
                     last = cur;
+                    if (ll.next!=null || ll.next.val != ll.val) {
+                        ll = cur;
+                    }
                 }
                 cur = cur.next;
             }
