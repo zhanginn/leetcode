@@ -30,6 +30,7 @@ package leetcode.editor.cn;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class _22GenerateParentheses {
     public static void main(String[] args) {
@@ -40,35 +41,38 @@ public class _22GenerateParentheses {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public List<String> generateParenthesis(int n) {
-            String tempStr = "", one = "()";
-            List<String> result = new ArrayList<>();
-            for (int i = 0; i < n; i++) {
-                tempStr += one;
-            }
-            result.add(tempStr);
-            String[] strArray = new String[2 * n];
-            for (int i = 0; i < tempStr.length(); i++) {
-                strArray[i] = tempStr.substring(i, i + 1);
-            }
-            for (int i = 0; i < strArray.length; i++) {
-                if (strArray[i].equals("(")) {
-                    continue;
-                }
-                if (i + 1 < strArray.length) {
-                    String temp = strArray[i];
-                    strArray[i] = strArray[i + 1];
-                    strArray[i + 1] = temp;
-                    String subStr = "";
-                    for (int j = 0; j < strArray.length; j++) {
-                        subStr += strArray[j];
-                    }
-                    if (!result.contains(subStr)) {
-                        result.add(subStr);
-                    }
+            List<String> ans = new ArrayList<>();
+            process(new char[n << 1], 0, ans);
+            return ans;
+        }
 
+        public void process(char[] path, int index, List<String> ans) {
+            if (index == path.length) {
+                if (isValid(path)) {
+                    ans.add(String.valueOf(path));
+                }
+                return;
+            }
+            path[index] = '(';
+            process(path, index + 1, ans);
+            path[index] = ')';
+            process(path, index + 1, ans);
+        }
+
+        public boolean isValid(char[] path) {
+            Stack<Character> stack = new Stack<>();
+            for (int i = 0; i < path.length; i++) {
+                if (path[i] == '(') {
+                    stack.push(path[i]);
+                }
+                if (path[i] == ')') {
+                    if (stack.isEmpty() || stack.peek() != '(') {
+                        return false;
+                    }
+                    stack.pop();
                 }
             }
-            return result;
+            return stack.isEmpty();
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
