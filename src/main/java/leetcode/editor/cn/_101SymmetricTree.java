@@ -75,11 +75,24 @@ public class _101SymmetricTree {
      */
     class Solution {
         public boolean isSymmetric(TreeNode root) {
-            if (root.left.val == root.right.val) {
-                return isSymmetric(root.left) && isSymmetric(root.right);
+            return process(root, root);
+        }
+
+        public boolean process(TreeNode left, TreeNode right) {
+            if (left == null && right == null) {
+                return true;
+            }
+            if (left == null || right == null) {
+                return false;
+            }
+            boolean p1, p2;
+            if (left.val == right.val) {
+                p1 = process(left.left, right.right);
+                p2 = process(left.right, right.left);
             } else {
                 return false;
             }
+            return p1 && p2;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)

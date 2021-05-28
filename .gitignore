@@ -5,6 +5,8 @@ HELP.md
 /doc
 doc
 doc/
+all.json
+translation.json
 
 ### STS ###
 .apt_generated
