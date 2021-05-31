@@ -7,6 +7,8 @@ doc
 doc/
 *.json
 .json
+*.md
+.md
 
 ### STS ###
 .apt_generated
