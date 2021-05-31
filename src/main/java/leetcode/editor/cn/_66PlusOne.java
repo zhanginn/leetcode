@@ -45,24 +45,32 @@ package leetcode.editor.cn;
 public class _66PlusOne {
     public static void main(String[] args) {
         Solution solution = new _66PlusOne().new Solution();
-        System.out.println(solution);
+        System.out.println(solution.plusOne(new int[]{1, 2, 3}));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] plusOne(int[] digits) {
-            String str = "";
-            for (int i = 0; i < digits.length; i++) {
-                str += digits[i];
+            boolean otherArr = false;
+            for (int i = digits.length - 1; i >= 0; i--) {
+                if (digits[i] != 9) {
+                    digits[i]++;
+                    break;
+                }
+                digits[i] = 0;
+                if (i == 0) {
+                    otherArr = true;
+                }
             }
-            Long tempInt = Long.valueOf(str);
-            tempInt++;
-            str = String.valueOf(tempInt);
-            int[] result=new int[str.length()];
-            for (int i = 0; i < str.length(); i++) {
-                result[i]= Integer.parseInt(str.substring(i,i+1));
+            if (otherArr) {
+                int[] ans = new int[digits.length + 1];
+                ans[0] = 1;
+                for (int i = 1; i < digits.length; i++) {
+                    ans[i] = digits[i - 1];
+                }
+                return ans;
             }
-            return result;
+            return digits;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
