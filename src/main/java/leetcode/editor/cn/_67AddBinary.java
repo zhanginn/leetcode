@@ -14,7 +14,6 @@
 // 输入: a = "1010", b = "1011"
 //输出: "10101" 
 //
-// 
 //
 // 提示： 
 //
@@ -28,47 +27,85 @@
 
 package leetcode.editor.cn;
 
+import java.util.Arrays;
+
 public class _67AddBinary {
     public static void main(String[] args) {
         Solution solution = new _67AddBinary().new Solution();
-        System.out.println(solution.addBinary("1010", "1011"));
-//        System.out.println(solution.dec2Bin("36"));
+        System.out.println(solution.addBinary("0", "0"));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String addBinary(String a, String b) {
-            if (a.equals("0") && b.equals("0")) {
-                return "0";
+            int length = Math.min(a.length(), b.length());
+            String prefix = "";
+            int diff = Math.abs(a.length() - b.length());
+            char[] a1;
+            char[] b1;
+            if (a.length() > b.length()) {
+                prefix = a.substring(0, diff);
+                a1 = a.substring(diff).toCharArray();
+                b1 = b.toCharArray();
+            } else if (b.length() > a.length()) {
+                prefix = b.substring(0, diff);
+                a1 = a.toCharArray();
+                b1 = b.substring(diff).toCharArray();
+            } else {
+                a1 = a.toCharArray();
+                b1 = b.toCharArray();
             }
-            int sumDec = Integer.parseInt(bin2Dec(a)) + Integer.parseInt(bin2Dec(b));
-            return dec2Bin(String.valueOf(sumDec));
-        }
-
-        public String bin2Dec(String a) {
-            int result = 0;
-            int count = 0;
-            for (int i = a.length(); i > 0; i--) {
-                int pow = (int) Math.pow(2, count);
-                int tempInt = Integer.parseInt(a.substring(i - 1, i));
-                result += tempInt * pow;
-                count++;
-            }
-            return String.valueOf(result);
-        }
-
-        public String dec2Bin(String a) {
-            String result = "";
-            int tempInt = Integer.parseInt(a);
-            while (tempInt > 0) {
-                if (tempInt % 2 == 0) {
-                    result = "0" + result;
+            String ans = "";
+            int lastAdd = 0;
+            char[] charAns = new char[length];
+            for (int i = length - 1; i >= 0; i--) {
+                if (lastAdd == 0) {
+                    if (a1[i] == '1' && b1[i] == '1') {
+                        lastAdd = 1;
+                        charAns[i] = '0';
+                    } else if (a1[i] == '0' && b1[i] == '0') {
+                        lastAdd = 0;
+                        charAns[i] = '0';
+                    } else {
+                        lastAdd = 0;
+                        charAns[i] = '1';
+                    }
                 } else {
-                    result = "1" + result;
+                    if (a1[i] == '1' && b1[i] == '1') {
+                        charAns[i] = '1';
+                    } else if (a1[i] == '1' && b1[i] == '0') {
+                        charAns[i] = '0';
+                    } else if (a1[i] == '0' && b1[i] == '1') {
+                        charAns[i] = '0';
+                    } else if (a1[i] == '0' && b1[i] == '0') {
+                        lastAdd = 0;
+                        charAns[i] = '1';
+                    }
                 }
-                tempInt /= 2;
             }
-            return result;
+            ans = String.valueOf(charAns);
+            if (prefix.length() > 0) {
+                if (lastAdd != 0) {
+                    char[] c = prefix.toCharArray();
+                    for (int i = c.length - 1; i >= 0; i--) {
+                        if (c[i] == '0') {
+                            c[i] = '1';
+                            prefix = String.valueOf(c);
+                            break;
+                        }
+                        c[i] = '0';
+                        if (i == 0) {
+                            prefix = "1" + String.valueOf(c);
+                        }
+                    }
+                }
+                ans = prefix + ans;
+            } else {
+                if (lastAdd != 0) {
+                    ans = "1" + ans;
+                }
+            }
+            return ans;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
