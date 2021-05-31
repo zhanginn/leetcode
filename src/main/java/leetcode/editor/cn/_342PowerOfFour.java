@@ -48,19 +48,13 @@ package leetcode.editor.cn;
 public class _342PowerOfFour {
     public static void main(String[] args) {
         Solution solution = new _342PowerOfFour().new Solution();
-        System.out.println(solution.isPowerOfFour(16));
+        System.out.println(solution.isPowerOfFour(20));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public boolean isPowerOfFour(int n) {
-            while (n != 1) {
-                if (n % 4 != 0) {
-                    return false;
-                }
-                n /= 4;
-            }
-            return true;
+            return n > 0 && (n & 0xaaaaaaaa) == 0 && (n & (n - 1)) == 0;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
