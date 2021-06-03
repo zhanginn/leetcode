@@ -36,28 +36,35 @@ package leetcode.editor.cn;
 public class _204CountPrimes {
     public static void main(String[] args) {
         Solution solution = new _204CountPrimes().new Solution();
-        System.out.println(solution.countPrimes(499979));
+        System.out.println(solution.countPrimes(100));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int countPrimes(int n) {
-            int ans = 0;
-            for (int i = 2; i < n; i++) {
-                if (isPrime(i)) {
-                    ans++;
+            if (n < 3) {
+                return 0;
+            }
+            //false代表素数，true代表非素数
+            boolean[] flags = new boolean[n];
+            //0不是素数
+            flags[0] = true;
+            //1不是素数
+            flags[1] = true;
+            int num = n - 2;
+            int sqrt = (int) Math.sqrt(n);
+            for (int i = 2; i <= (int) Math.sqrt(n); i++) {
+                //当i为素数时，i的所有倍数都不是素数
+                if (!flags[i]) {
+                    for (int j = 2 * i; j < n; j += i) {
+                        if (!flags[j]) {
+                            flags[j] = true;
+                            num--;
+                        }
+                    }
                 }
             }
-            return ans;
-        }
-
-        public boolean isPrime(int n) {
-            for (int i = 2; i < n; i++) {
-                if (n % i == 0) {
-                    return false;
-                }
-            }
-            return true;
+            return num;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
