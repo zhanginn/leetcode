@@ -50,9 +50,9 @@ public class _219ContainsDuplicateIi {
                 return true;
             }
             for (int i = k + 1; i < nums.length; i++) {
-                linkedHashSet.remove(nums[i - k]);
+                linkedHashSet.remove(nums[i - k - 1]);
                 linkedHashSet.add(nums[i]);
-                if (linkedHashSet.size() < k) {
+                if (linkedHashSet.size() <= k) {
                     return true;
                 }
             }
