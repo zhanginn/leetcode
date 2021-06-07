@@ -48,8 +48,11 @@ public class _50PowxN {
     class Solution {
         public double myPow(double x, int n) {
             double temp = x;
-            if (n == 0) {
+            if (n == 0 || x == 1d) {
                 return 1d;
+            }
+            if (x == -1d) {
+                return (n & 1) == 1 ? -1d : 1d;
             }
             if (n == Integer.MIN_VALUE) {
                 return (x == 1d || x == -1d) ? 1d : 0;
