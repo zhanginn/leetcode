@@ -59,20 +59,22 @@ public class _31NextPermutation {
             int count = 0;
             for (int i = nums.length - 1; i > 1; i--) {
                 if (nums[i] > nums[i - 1]) {
-                    int temp = nums[i];
-                    nums[i] = nums[i - 1];
-                    nums[i - 1] = temp;
+                    swap(nums, i, i - 1);
                     count++;
                     break;
                 }
             }
             if (count == 0) {
                 for (int i = 0; i < nums.length / 2; i++) {
-                    int temp = nums[i];
-                    nums[i] = nums[nums.length - i - 1];
-                    nums[nums.length - i - 1] = temp;
+                    swap(nums, i, nums.length - i - 1);
                 }
             }
+        }
+
+        public void swap(int[] arr, int i, int j) {
+            int tmp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
