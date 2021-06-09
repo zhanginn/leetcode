@@ -51,32 +51,26 @@
 
 package leetcode.editor.cn;
 
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class _1049LastStoneWeightIi {
     public static void main(String[] args) {
         Solution solution = new _1049LastStoneWeightIi().new Solution();
-        System.out.println(solution.lastStoneWeightII(new int[]{5, 2, 3}));
+        System.out.println(solution.lastStoneWeightII(new int[]{31,26,33,21,40}));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
 
     class Solution {
-        private Object mycomparator;
-        public class mycomparator implements Comparator {
-            @Override
-            public int compare(Object o1, Object o2) {
-                int i = Integer.parseInt(String.valueOf(o2)) - Integer.parseInt(String.valueOf(o1));
-                return i;
-            }
-        }
-
         public int lastStoneWeightII(int[] stones) {
-            PriorityQueue<Integer> q = new PriorityQueue<>((Integer) mycomparator);
+            PriorityQueue<Integer> q = new PriorityQueue<>((o1, o2) -> o2 - o1);
             for (int stone : stones) {
                 q.add(stone);
+            }
+            while (q.size() > 1) {
+                int a = q.poll();
+                int b = q.poll();
+                q.add(a - b);
             }
             return q.poll();
         }
