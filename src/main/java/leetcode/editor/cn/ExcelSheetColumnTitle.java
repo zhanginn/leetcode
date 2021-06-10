@@ -37,7 +37,7 @@ package leetcode.editor.cn;
 public class ExcelSheetColumnTitle {
     public static void main(String[] args) {
         Solution solution = new ExcelSheetColumnTitle().new Solution();
-        System.out.println(solution.convertToTitle(27));
+        System.out.println(solution.convertToTitle(701));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -46,14 +46,15 @@ public class ExcelSheetColumnTitle {
             if (columnNumber <= 0) {
                 return "";
             }
-            String ans = "";
+            StringBuilder ans = new StringBuilder();
             char tmp;
-            while (columnNumber % 26 != 0) {
-                tmp = (char) (columnNumber % 26 + 'A' - 1);
-                ans += String.valueOf(tmp);
+            while (columnNumber != 0) {
+                columnNumber--;
+                tmp = (char) (columnNumber % 26 + 'A');
+                ans.append(tmp);
                 columnNumber /= 26;
             }
-            return ans;
+            return ans.reverse().toString();
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
