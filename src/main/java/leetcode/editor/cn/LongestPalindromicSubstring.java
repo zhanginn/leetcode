@@ -47,15 +47,38 @@ package leetcode.editor.cn;
 public class LongestPalindromicSubstring {
     public static void main(String[] args) {
         Solution solution = new LongestPalindromicSubstring().new Solution();
-        System.out.println(solution.isPalind("assaa"));
+        System.out.println(solution.longestPalindrome("lphbehiapswjudnbcossedgioawodnwdruaaxhbkwrxyzaxygmnjgwysafuqbmtzwdkihbwkrjefrsgjbrycembzzlwhxneiijgzidhngbmxwkhphoctpilgooitqbpjxhwrekiqupmlcvawaiposqttsdgzcsjqrmlgyvkkipfigttahljdhtksrozehkzgshekeaxezrswvtinyouomqybqsrtegwwqhqivgnyehpzrhgzckpnnpvajqevbzeksvbezoqygjtdouecnhpjibmsgmcqcgxwzlzztdneahixxhwwuehfsiqghgeunpxgvavqbqrelnvhnnyqnjqfysfltclzeoaletjfzskzvcdwhlbmwbdkxnyqappjzwlowslwcbbmcxoiqkjaqqwvkybimebapkorhfdzntodhpbhgmsspgkbetmgkqlolsltpulgsmyapgjeswazvhxedqsypejwuzlvegtusjcsoenrcmypexkjxyduohlvkhwbrtzjnarusbouwamazzejhnetfqbidalfomecehfmzqkhndpkxinzkpxvhwargbwvaeqbzdhxzmmeeozxxtzpylohvdwoqocvutcelgdsnmubyeeeufdaoznxpvdiwnkjliqtgcmvhilndcdelpnilszzerdcuokyhcxjuedjielvngarsgxkemvhlzuprywlypxeezaxoqfges"));
+//        "babad".substring(2,2);
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public String longestPalindrome(String s) {
-            return null;
+            if (s == null || s.length() == 1) {
+                return s;
+            }
+            int l = 0, len = 1, max = 0;
+            String ans = "";
+            while (l < s.length()) {
+                if (s.substring(l).length() <= max) {
+                    break;
+                }
+                if (len < max && len + l < s.length()) {
+                    len = max;
+                }
+                String tmp = s.substring(l, len + l);
+                if (isPalind(tmp)) {
+                    ans = tmp.length() > max ? tmp : ans;
+                    max = Math.max(tmp.length(), max);
+                }
+                len++;
+                if (len + l > s.length()) {
+                    l++;
+                    len = 1;
+                }
+            }
+            return ans;
         }
-        public
 
         public boolean isPalind(String s) {
             char[] c = s.toCharArray();
