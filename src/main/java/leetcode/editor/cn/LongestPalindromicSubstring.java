@@ -53,79 +53,34 @@ public class LongestPalindromicSubstring {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
-        //        public String longestPalindrome(String s) {
-//            if (s == null || s.length() == 1) {
-//                return s;
-//            }
-//            int l = 0, len = 1, max = 0;
-//            String ans = "";
-//            while (l < s.length()) {
-//                if (s.substring(l).length() <= max) {
-//                    break;
-//                }
-//                if (len < max && len + l < s.length()) {
-//                    len = max;
-//                }
-//                String tmp = s.substring(l, len + l);
-//                if (isPalind(tmp)) {
-//                    ans = tmp.length() > max ? tmp : ans;
-//                    max = Math.max(tmp.length(), max);
-//                }
-//                len++;
-//                if (len + l > s.length()) {
-//                    l++;
-//                    len = 1;
-//                }
-//            }
-//            return ans;
-//        }
-//
-//        public boolean isPalind(String s) {
-//            char[] c = s.toCharArray();
-//            int l = 0, r = c.length - 1;
-//            while (l < r) {
-//                if (c[l] != c[r]) {
-//                    return false;
-//                }
-//                l++;
-//                r--;
-//            }
-//            return true;
-//        }
         public String longestPalindrome(String s) {
             if (s == null || s.length() == 0) {
                 return "";
             }
-//         保存起始位置，测试了用数组似乎能比全局变量稍快一点
-            int[] range = new int[2];
-            char[] str = s.toCharArray();
-            for (int i = 0; i < s.length(); i++) {
-//             把回文看成中间的部分全是同一字符，左右部分相对称
-//             找到下一个与当前字符不同的字符
-                i = findLongest(str, i, range);
-            }
-            return s.substring(range[0], range[1] + 1);
-        }
-
-        public int findLongest(char[] str, int low, int[] range) {
-//         查找中间部分
-            int high = low;
-            while (high < str.length - 1 && str[high + 1] == str[low]) {
-                high++;
-            }
-//         定位中间部分的最后一个字符
-            int ans = high;
-//         从中间向左右扩散
-            while (low > 0 && high < str.length - 1 && str[low - 1] == str[high + 1]) {
-                low--;
-                high++;
-            }
-//         记录最大长度
-            if (high - low > range[1] - range[0]) {
-                range[0] = low;
-                range[1] = high;
+            String tmp = "", ans = "";
+            char[] c = s.toCharArray();
+            for (int i = 0; i < c.length; i++) {
+                tmp = process(c, i);
+                if (tmp.length() > ans.length()) {
+                    ans = tmp;
+                }
             }
             return ans;
+        }
+
+        public String process(char[] c, int index) {
+            int i = index, j = index;
+            while (j < c.length - 1 && c[i] == c[j + 1]) {
+                j++;
+            }
+            while (i > 0 && j < c.length - 1) {
+                if (c[i - 1] != c[j + 1]) {
+                    break;
+                }
+                i--;
+                j++;
+            }
+            return String.valueOf(c, i, j - i + 1);
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
