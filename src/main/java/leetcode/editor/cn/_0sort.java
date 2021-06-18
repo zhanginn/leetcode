@@ -53,20 +53,14 @@ public class _0sort {
     }
 
     public static void quickSort(int[] arr, int l, int r) {
-        if (l >= r) {
-            return;
-        }
-        int p = arr[l], i = l, j = r;
+        if (l >= r || arr == null || arr.length < 2) return;
+        int i = l, j = r, p = arr[l];
         while (i < j) {
-            while (arr[j] >= p && i < j) {
-                j--;
-            }
-            while (arr[i] <= p && i < j) {
-                i++;
-            }
+            while (i < j && arr[j] >= p) j--;
+            while (i < j && arr[i] <= p) i++;
             swap(arr, i, j);
         }
-        swap(arr, l, i);
+        swap(arr, i, l);
         quickSort(arr, l, j - 1);
         quickSort(arr, j + 1, r);
     }
