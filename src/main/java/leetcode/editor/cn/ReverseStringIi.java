@@ -39,24 +39,18 @@ public class ReverseStringIi {
             if (s == null || s.length() < 2) {
                 return s;
             }
+            int length = s.length();
             StringBuilder ans = new StringBuilder();
-            for (int i = 0; i < s.length(); i += k * 2) {
-                ans.append(swap(s.substring(i, Math.min(i + k, s.length()))));
-                if (ans.length() == s.length()) {
-                    break;
-                }
-                ans.append(s, i + k, Math.min(i + k * 2, s.length()));
+            for (int i = 0; i < length; i += k * 2) {
+                ans.append(swap(s.substring(i, Math.min(i + k, length))));
+                ans.append(s, Math.min(i + k, length), Math.min(i + k * 2, length));
             }
             return ans.toString();
         }
 
         public String swap(String s) {
-            char[] c = s.toCharArray();
-            StringBuilder sBuilder = new StringBuilder();
-            for (int i = c.length - 1; i >= 0; i--) {
-                sBuilder.append(c[i]);
-            }
-            return sBuilder.toString();
+            StringBuilder ans = new StringBuilder(s);
+            return String.valueOf(ans.reverse());
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
